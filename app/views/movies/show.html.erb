@@ -1,7 +1,5 @@
-
-
-  <div class="medium-10 columns">
-    <%= render partial: "layouts/movie", collection: @movies %>
+<div class="medium-10 columns">
+    <%= render partial: "layouts/movie", object: @movie %>
 
     <div>
       <%= button_to "Rent!", movie_rentals_path(@movie), class: :button %>
